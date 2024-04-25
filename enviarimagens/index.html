@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Organize Minhas Compras</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <div class="menu">
+            <div class="title">
+                <h1>Organize Minhas Compras</h1>
+                </div>
+        <nav class="navigation">
+            <ol>
+                <li class="menu-item"><a class="menu-item" href="/index.html">Gallery</a></li>
+                <li class="menu-item"><a class="menu-item" href="/contagem.html">Contagem</a></li>
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <body>
+        <div class="box">
+            <form id="formulario">
+            <h2>Envie Sua Foto</h2>
+            <button class="new_image">Escolher Imagem</button>
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="url" id="link" placeholder="Link" required>
+            <input list="tipos" id="tipo" placeholder="tipo" >
+            <datalist id="tipos">
+                <option value="Decorações"></option>
+                <option value="Roupa"></option>
+                <option value="Sapato"></option>
+                <option value="Acessórios"></option>
+                <option value="Jogos e Papelaria"></option>
+                <option value="Casa"></option>
+                <option value="Beleza"></option>
+                <option value="Coisas Úteis"></option>
+                <option value="ElétroDomesticos"></option>
+                <option value="Coisas de Pet"></option>
+            </datalist>
+            <input name="acao" type="button" value="Enviar" id="submitBtn">
+            <input type="file" name="file" accept="image/*" id="file" hidden required>
+        </form>
+        </div>
+        <div class="botoes">
+            <button class="filter-btn" data-type="all">Todos</button>
+            <button class="filter-btn" data-type="Decorações">Decorações</button>
+            <button class="filter-btn" data-type="Roupa">Roupa</button>
+            <button class="filter-btn" data-type="Sapato">Sapato</button>
+            <button class="filter-btn" data-type="Acessórios">Acessórios</button>
+            <button class="filter-btn" data-type="Jogos e Papelaria">Jogos e Papelaria</button>
+            <button class="filter-btn" data-type="Casa">Casa</button>
+            <button class="filter-btn" data-type="Beleza">Beleza</button>
+            <button class="filter-btn" data-type="Coisas Úteis">Coisas Úteis</button>
+            <button class="filter-btn" data-type="ElétroDomesticos">ElétroDomesticos</button>
+            <button class="filter-btn" data-type="Coisas de Pet">Coisas de Pet</button>
+            <input type="text" id="searchInput" placeholder="Pesquisar por nome...">
+        </div>
+        <div class="gallery-container">
+
+        </div>
+        <script src="script.js"></script>
+        <footer>
+            <div class="copywright">
+                <span>Copywright &copy; Murilo,Levi 2024</span>
+            </div>
+        </footer>
+    </body>
+</html>
